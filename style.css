@@ -1,0 +1,162 @@
+body,
+html {
+  height: 100%;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color: #f0f0ee;
+  margin: 0px;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration:none;
+  color:white;
+}
+a:hover{
+  text-decoration:none !important;
+}
+
+/* #placeholder1 {
+  height: 100vh;
+  background-color: grey;
+} */
+
+#pinContainer {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+section, footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.panel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#pinMaster {
+  position: relative;
+}
+
+footer {
+  height: 100px;
+  background-color: gray;
+}
+
+.spacer {
+  height: 100vh;
+  background-color: #42a6e0;
+}
+
+.dark {
+  background-color: #262626;
+}
+.turqoise {
+  background-color: #38ced7;
+}
+.brown {
+  background-color: #a66f28;
+}
+.bordeaux {
+  background-color: #953543;
+}
+.img{
+    width: 620px;
+    height: 1000px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index:-1;
+}
+.intro-column{
+  padding:0px !important;
+  margin:0px !important;
+}
+.overlay{
+  height: 1000px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index:0;
+}
+.overlay:hover{
+  height: 1000px;
+  background-color: rgba(0, 0, 0, 0);
+  z-index:0;
+  transition:0.7s;
+}
+.column-label{
+  position: absolute;
+  margin-top:500px;
+  z-index:1;
+}
+#column-label-1{
+  margin-left:200px;
+}
+#column-label-2{
+  margin-left:230px;
+}
+#column-label-3{
+  margin-left:250px;
+}
+.menu:hover{
+  color: #5cb85c;
+}
+
+.card-block .btn-outline-primary {
+  width: 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.card {
+  margin: 20px 0;
+}
+
+/* Flip Cards CSS */
+.card-container {
+  perspective: 700px;
+}
+.card-flip {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  height: auto;
+  transition: all 0.5s ease-out;
+  background: white;
+  border: none;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.card-flip .front {
+  position: relative;
+  z-index: 1;
+}
+
+.card-flip .back {
+  position: relative;
+  z-index: 0;
+  transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}
