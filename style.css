@@ -160,3 +160,11 @@ footer {
 .card-container:hover .card-flip {
   transform: rotateY(180deg);
 }
+
+#flipping-houses-card{
+  margin-left:1050px;
+}
+
+#REITS-card{
+ margin-left:1050px;
+}
