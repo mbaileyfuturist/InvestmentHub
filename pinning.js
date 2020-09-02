@@ -1,7 +1,7 @@
 var controller = new ScrollMagic.Controller();
 var tl = new TimelineMax();
 tl.fromTo(
-  "section.panel.turqoise",
+  "section.panel.dark-blue",
   1,
   { xPercent: 100 },
   { xPercent: 0, ease: Linear.easeNone },
