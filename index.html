@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,34 +11,34 @@
     </head>
     <body>
         
-        <section class="spacer">
-                <div class="row">
-                  <div class="intro-column col-sm">
-                    <div class="img" style="background-image:url('images/stockmarket.jpg')">
-                      <div class="overlay"> 
-                          <p id="column-label-1" class="column-label h2 text-center"><a href="#stock-market" class="text-white">Stock Market</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="intro-column col-sm border-left border-right border-dark">
-                    <div class="img" style="background-image:url('images/realestate.jpg')">
-                      <div class="overlay">
-                        <p id="column-label-2" class="column-label h2 text-white text-center"><a href="#real-estate" class="text-white">Real Estate</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="intro-column  col-sm">
-                    <div class="img" style="background-image:url('images/businessLoan.jpg')">
-                      <div class="overlay">
-                        <p id="column-label-3" class="column-label h2 text-white text-center">Bonds</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-        </section>
-            <div id="pinMaster">
-            <div id="pinContainer">
-                <section class="panel dark stock-market row" id="stock-market">
+                <section class="spacer">
+                        <div class="row">
+                          <div class="intro-column col-sm">
+                            <div class="img" style="background-image:url('images/stockmarket.jpg')">
+                              <div class="overlay"> 
+                                  <p id="column-label-1" class="column-label h2 text-center"><a href="#stock-market" class="text-white">Stock Market</a></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="intro-column col-sm border-left border-right border-dark">
+                            <div class="img" style="background-image:url('images/realestate.jpg')">
+                              <div class="overlay">
+                                <p id="column-label-2" class="column-label h2 text-white text-center"><a href="#real-estate" class="text-white">Real Estate</a></p>
+                                <p class="continue-label h3 text-white text-center">Scroll to continue</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="intro-column  col-sm">
+                            <div class="img" style="background-image:url('images/businessLoan.jpg')">
+                              <div class="overlay">
+                                <p id="column-label-3" class="column-label h2 text-white text-center">Bonds</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                </section>
+
+                <section class=" dark stock-market row" id="stock-market">
                   <div class="col-md-4 card-container">
                     <div class="card card-flip">
                       <div class="front card-block">
@@ -69,7 +69,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4 mt-5 card-container">
+                  <div class="col-md-4 card-container">
                     <div class="card card-flip">
                       <div class="front card-block">
                         <img src="images/technical.jpg" style="width:100%;height:350px;">
@@ -80,36 +80,33 @@
                       <div class="back card-block">
                         <h5 class="text-center">Technical Analysis</h5>
                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit expedita illo accusamus cumque commodi corporis ad modi explicabo veniam, similique iure dignissimos itaque neque iste maiores quas blanditiis dolor excepturi?</p>
-                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                        <a href="#" class="btn btn-outline-primary" id="trigger-element-1">Read More</a>
                       </div>
                     </div>
                   </div>
                 </section>
-                <section class="panel dark-blue real-estate" id="real-estate">
-                  
-                  <div class="card bg-dark mb-3 real-estate-card" style="max-width: 800px;max-height:400px;margin-top: 2%;">
+
+                <section class="dark-blue mt-0" id="real-estate">  
+                  <div class="card bg-dark mb-3 real-estate-cards-1 mt-0" style="max-width: 800px;max-height:400px;">
                     <div class="row no-gutters">
-                  
                       <div class="col-md-8">
-                        <div class="card-body">
+                        <div class="card-body real-estate">
                           <h5 class="card-title text-white">Residential</h5>
                           <p class="card-text text-white">Begin your real estate journey by learning the ins and outs of residential real estate and how to invest in it.</p>
                           <button type="button" class="btn btn-success">Learn More</button>
                         </div>
                       </div>
-
                       <div class="col-md-4">
                         <img src="images/residential_real_estate.jpg" class="card-img" alt="Residential Real Estate" style="height:100%;">
                       </div> 
-
                     </div>
                   </div>
 
-                  <div class="card mb-3 bg-dark real-estate-card" style="max-width: 800px;">
+                  <div class="card mb-3 bg-dark real-estate-cards-1" style="max-width: 800px;">
                     <div class="row no-gutters">
                       
                       <div class="col-md-8">
-                        <div class="card-body">
+                        <div class="card-body real-estate">
                           <h5 class="card-title text-white">Commercial</h5>
                           <p class="card-text text-white">Enter the exciting world of commercial real estate and how to invest in it. Barrier to entry is high but so are the rewards.</p>
                           <button type="button" class="btn btn-success">Learn More</button>
@@ -122,13 +119,13 @@
                     </div>
                   </div>
 
-                  <div id="flipping-houses-card" class="card mb-3 bg-dark real-estate-card" style="max-width: 800px;">
+                  <div id="flipping-houses-card" class="card mb-3 bg-dark real-estate-cards-2" style="max-width: 800px;">
                     <div class="row no-gutters">
                       <div class="col-md-4">
                         <img src="images/flipping-houses.jpg" class="card-img" alt="Flipping Houses" style="height:100%;">
                       </div>
                       <div class="col-md-8">
-                        <div class="card-body">
+                        <div class="card-body real-estate">
                           <h5 class="card-title text-white">Flipping Houses</h5>
                           <p class="card-text text-white">Maximize your revenue by learning how to flip houses and selling them for a profit. This section will teach you everything</p>
                           <button type="button" class="btn btn-success" style="margin-left:370px;">Learn More</button>
@@ -137,13 +134,13 @@
                     </div>
                   </div>
 
-                  <div id="REITS-card" class="card bg-dark mb-3 real-estate-card" style="max-width: 800px;">
+                  <div id="REITS-card" class="card bg-dark mb-3 real-estate-cards-2" style="max-width: 800px;">
                     <div class="row no-gutters">
                       <div class="col-md-4">
                         <img src="images/REITS.jpg" class="card-img" alt="REITS" style="height:100%;">
                       </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
+                      <div class="col-md-8" id="trigger-element-2">
+                        <div class="card-body real-estate">
                           <h5 class="card-title text-white">REITS</h5>
                           <p class="card-text text-white">Want to invest in real estate, but not work? With REITS you dont have to worry about the hassle of physical labor.</p>
                           <button type="button" class="btn btn-success" style="margin-left:370px;">Learn More</button>
@@ -152,12 +149,43 @@
                     </div>
                   </div>
                 </section>
-                <section class="panel bordeaux bonds">
-                Pin Panel C
-                </section>
-            </div>
-            <section class="spacer">Content</section>
-            <footer>Footer</footer>
+
+            <section class="spacer dark row" id="bonds-section">
+              <div class="bond-types col" style="width:50%;margin-left:1%">
+                <div class="bonds">
+                  <h3 class="text-white">Corporate Bonds</h3>
+                  <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non corrupti, consectetur sed beatae autem nemo quo magnam cumque sit possimus consequatur et pariatur reprehenderit dolorem nihil recusandae. Exercitationem, laboriosam error!</p>
+                </div>
+                <div class="bonds">
+                  <h3 class="text-white">Foreign Bonds</h3>
+                  <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis officia odio placeat! Voluptas repellat illo odit vitae culpa consequatur reiciendis? Eius ipsam iste dolores iure libero facilis, maiores provident unde!</p>
+                </div>
+                <div class="bonds">
+                  <h3 class="text-white">Convertible Bonds</h3>
+                  <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis officia odio placeat! Voluptas repellat illo odit vitae culpa consequatur reiciendis? Eius ipsam iste dolores iure libero facilis, maiores provident unde!</p>
+                </div>
+                <div class="bonds">
+                  <h3 class="text-white">Non-Conventional Bonds</h3>
+                  <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis officia odio placeat! Voluptas repellat illo odit vitae culpa consequatur reiciendis? Eius ipsam iste dolores iure libero facilis, maiores provident unde!</p>
+                </div>
+                <div class="bonds">
+                  <h3 class="text-white">Prefered Stocks</h3>
+                  <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis officia odio placeat! Voluptas repellat illo odit vitae culpa consequatur reiciendis? Eius ipsam iste dolores iure libero facilis, maiores provident unde!</p>
+                </div>
+                <div class="bonds">
+                  <h3 class="text-white">Adjustment Bonds</h3>
+                  <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis officia odio placeat! Voluptas repellat illo odit vitae culpa consequatur reiciendis? Eius ipsam iste dolores iure libero facilis, maiores provident unde!</p>
+                </div>
+              </div>
+              
+              <div class="bonds-img-container d-inline float-right col">
+                <img class="d-inline ml-5 bond-img" src="images/wall-street.jpg" style="width:80%;height:100%;">
+              </div>
+            </section>
+
+            <footer>
+              <p class="text-white text-center pt-5">Designed by mbaileyfuturist</p>
+            </footer>
             </div>   
         
         <!--Bootstrap-->
@@ -173,9 +201,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 
         <!-- In house js -->
-        <script src="pinning.js"></script>
         <script src="animation1.js"></script>
         <script src="card-rotation.js"></script>
+        <script src="bonds-animation.js"></script>
+        <script src="real-estate-animation.js"></script>
 
         <!--Ion Icons-->
         <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
